@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Very Organized Grocery List</title>
+</head>
+<body>
+    <h1 class="heading">My Very Organized Grocery List</h1>
+
+    <h2 class="add">Add items to lists:</h2>
+    <form id="addItemForm">
+        <label for="category">Select Category:</label>
+        <select id="category">
+            <option value="canned">Canned</option>
+            <option value="dry goods">Dry Goods</option>
+            <option value="veggies">Veggies</option>
+            <option value="snacks">Snacks</option>
+        </select>
+
+        <label for="item">Enter Item:</label>
+        <input type="text" id="item" placeholder="ex. apples, oranges, etc." required>
+        <button type="submit">Add</button>
+    </form>
+    <h2 class="categories">Pantry Items</h2>
+    <div class="subcategories">
+        <article>
+            <h3 class="subcategory-title">Canned</h3>
+            <ul id="canned">
+            </ul>
+        </article>
+        <article>
+            <h3 class="subcategory-title">Dry Goods</h3>
+            <ul id="dryGoods">
+            </ul>
+        </article>
+        <div class="image-container">
+            <img src="https://www.mashed.com/img/gallery/food-you-should-never-buy-generic/intro-1505915613.jpg">
+        </div>
+    </div> 
+    <h2 class="categories">Freezer Items</h2>
+    <div class="subcategories">
+        <article>
+            <h3 class="subcategory-title">Veggies</h3>
+            <ol id="veggies">
+            </ol>
+        </article>
+        <article>
+            <h3 class="subcategory-title">Snacks</h3>
+            <ol id="snacks">
+            </ol>
+        </article>
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/1314210006/photo/grocery-store-shop-in-vintage-style-with-fruit-and-vegetables-crates-on-the-street.jpg?s=612x612&w=0&k=20&c=UFL3bRQkWH7dt6EMLswvM4u8-1sPQU9T5IFHXuBbClU=">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
